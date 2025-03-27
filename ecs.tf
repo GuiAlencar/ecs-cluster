@@ -2,6 +2,7 @@ resource "aws_ecs_cluster" "main" {
   name = var.project_name
 
   setting {
+    # métricas para o cloudWatch
     name  = "containerInsights"
     value = "enabled"
   }
