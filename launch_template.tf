@@ -11,7 +11,8 @@ resource "aws_launch_template" "on_demand" {
   # iam_instance_profile {
   #   name = "ecsInstanceRole"
   # }
-
+  
+  # Caso a sua conta não tenha a Instance Profile ecsInstanceProfile
   iam_instance_profile {
     name = aws_iam_instance_profile.main.name
   }
